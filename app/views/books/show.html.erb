@@ -1,0 +1,28 @@
+<% if flash[:notice] %>
+  <div class="flash">
+	<%= flash[:notice] %>
+  </div>
+<% end %>
+<table>
+	<tr>
+		<th>Title:</th>
+		<th><%= @book.title %></th>
+	</tr>
+	<tr>
+		<th>Body:</th>
+		<th><%= @book.body %></th>
+	</tr>
+</table>
+
+<%= link_to "Edit", edit_book_path %>
+<%= link_to "Back", books_path %>
+
+
+
+
+
+
+
+
+
+
